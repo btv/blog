@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Bryce'
-#SITENAME = u'pelican.scrollingtext.org'
-#SITEURL = 'http://%s' % SITENAME
+SITENAME = u'scrollingtext.org'
+SITEURL = 'http://%s' % SITENAME
 
 PATH = 'content'
 

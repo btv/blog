@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITENAME = u'pelican.scrollingtext.org'
+SITENAME = u'scrollingtext.org'
 SITEURL = 'http://%s' % SITENAME
 RELATIVE_URLS = False
 
@@ -25,4 +25,4 @@ DELETE_OUTPUT_DIRECTORY = True
 DISQUS_SITENAME = "scrollingtext"
 #GOOGLE_ANALYTICS = ""
 PIWIK_URL = "analytics.scrollingtext.org"
-PIWIK_SITE_ID = '2'
+PIWIK_SITE_ID = '1'
