@@ -1,5 +1,5 @@
 ﻿Title: Long absense and a new look
-Date: 2015-09-21 16:33
+Date: 2016-01-13 16:33
 Author: Bryce
 Tags: personal
 Slug: long-absense-new-look
