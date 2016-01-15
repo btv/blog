@@ -33,11 +33,12 @@ SOCIAL = (('Github', 'https://github.com/btv/'),
 
 DEFAULT_PAGINATION = 10
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 MD_EXTENSIONS = ['fenced_code',
                  'codehilite(css_class=highlight, linenums=True)',
                  'extra']
 DEFAULT_CATEGORY = 'blog'
 STATIC_PATHS = ['images']
-
+DISQUS_SITENAME = "scrollingtext"
+PIWIK_URL = 'analytics.scrollingtext.org'
+PIWIK_SITE_ID = 1

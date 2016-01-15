@@ -22,7 +22,3 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-DISQUS_SITENAME = "scrollingtext"
-#GOOGLE_ANALYTICS = ""
-PIWIK_URL = "analytics.scrollingtext.org"
-PIWIK_SITE_ID = '1'
