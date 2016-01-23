@@ -8,7 +8,7 @@ First off, I just wanted to say that I hope everyone had a relaxing and
 enjoyable holiday season and that you enjoyed your New Year's
 celebration. Whatever you did that day or night, don't name it after me.
 
-In my last [post](http://scrollingtext.org/first-flask-web-app"), I
+In my last [post]({filename}/first-flask-web-app.md), I
 showed you how to create a simple web service that responded to three
 different URLs and interacted with a database using Python and the Flask
 framework. Now I'm going to show you how to program the same thing in
