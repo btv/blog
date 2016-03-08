@@ -2,7 +2,6 @@
 Date: 2016-03-07
 Author: Bryce
 Tags: fedora,selinux,unbound
-Slug: fedora-selinux-unbound
 
 For a long time, I've wanted to upgrade my home network setup from using dnsmasq
 resolving to Google's DNS, to an internally hosted dns service that can do
@@ -19,7 +18,7 @@ that does a great job of walking someone through ....
 
 To add for the forward section, I go into `/etc/unbound/conf.d/` and 
 ```
-cp example-something.conf fowarder.conf
+cp example-com.conf foward.conf
 ```
 
 add the google DNS servers as recommended by the blog post, restart the service,
@@ -51,12 +50,13 @@ I now know that SELinux is causing the problem, now to figure out how to fix it.
 I jump back to the command line and type a couple of commands:
 
 ```
-cd /etc/unbound/conf.d
-ls -liahZ
-STUFF
-cd ../local.d
-ls-liahZ
-MORE STUFF
+ls -liahZ /etc/unbound/conf.d
+...
+656241 -rw-r--r--. 1 root root    unconfined_u:object_r:named_conf_t:s0  461 Mar  5 11:06 forward.conf
+ls-liahZ /etc/unbound/local.d
+...
+656054 -rw-rw-r--. 1 root root    unconfined_u:object_r:user_home_t:s0  194K Mar  5 12:45 adservers.conf
+
 ```
 
 because I downloaded the adservers.conf file from the
