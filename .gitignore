@@ -2,3 +2,4 @@
 *.pid
 output/*
 __pycache__/*
+content/*swp

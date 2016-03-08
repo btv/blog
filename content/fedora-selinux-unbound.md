@@ -7,13 +7,13 @@ Slug: fedora-selinux-unbound
 For a long time, I've wanted to upgrade my home network setup from using dnsmasq
 resolving to Google's DNS, to an internally hosted dns service that can do
 some extra things like DNSSEC. This past weekend I had a breif moment of free
-time, so I decided to play with [Unbound]() on my spare Fedora 23 laptop.
+time, so I decided to play with [Unbound](https://unbound.net/) on my spare Fedora 23 laptop.
 
 I started with installing Unbound on the laptop, read up on Unbound from the
 ArchLinux Wiki, a great resource for knowledge even if you're not running Arch,
 and performing a basic internet search just to get exposed with how other
 people setup Unbound. I found
-[this blog post]()
+[this blog post](https://calomel.org/unbound_dns.html)
 that does a great job of walking someone through ....
 
 
@@ -34,7 +34,7 @@ I go and review the permissions within the directory, they weren't correct,
 after I fixed them I tried to restart the service again and I still see the
 same error message.
 
-`STUB - WTF type image`
+![Photo]({attach}/images/jMN4ebSmbZdMA.gif)
 
 After what felt like an hour and using every permissions trick I can think of,
 I finally remembered that I was running with SELinux enabled. So I quickly try:
@@ -45,7 +45,7 @@ setenforce 0
 
 restarted unbound, and BAM, Unbound is working again.
 
-`STUB - HAPPY DANCE GIF`
+![Photo]({attach}/images/dpYkMt1b9BNmw.gif)
 
 I now know that SELinux is causing the problem, now to figure out how to fix it.
 I jump back to the command line and type a couple of commands:
