@@ -15,7 +15,7 @@ FTP_TARGET_DIR=/
 SSH_HOST=web414.webfaction.com
 SSH_PORT=22
 SSH_USER=bryce
-SSH_TARGET_DIR=/home/bryce/webapps/pelican
+SSH_TARGET_DIR=/home/bryce/webapps/new_home
 
 S3_BUCKET=my_s3_bucket
 
